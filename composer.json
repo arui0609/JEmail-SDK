@@ -14,5 +14,15 @@
             "email": "1598369123@qq.com"
         }
     ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Arui\\JEmail\\JEmailProvider"
+            ],
+            "aliases": {
+                "JEmail": "Arui\\JEmail\\Facades\\JEmail"
+            }
+        }
+    },
     "require": {}
 }
