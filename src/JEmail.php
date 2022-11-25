@@ -19,6 +19,9 @@ class JEmail
     public function __construct()
     {
         $this->config = config('j_cloud',[]);
+        if(!$this->config){
+            throw new \Exception("miss param j cloud,please run 'php artisan '");
+        }
     }
 
 
